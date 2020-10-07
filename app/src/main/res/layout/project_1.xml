@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerInside"
+            android:layout_margin="20dp"
+            />
+
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:hint="Name"
+            android:layout_margin="8dp"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-black"
+            android:inputType="textPersonName"
+            android:background="#FFFFFF"
+
+            />
+
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:hint="E-mail"
+            android:layout_margin="8dp"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-black"
+            android:inputType="textPersonName"
+            android:background="#FFFFFF"
+            />
+        <Button
+            android:id="@+id/submit_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Email"
+            android:scaleType="center"
+            android:textAlignment="center"
+            android:text="Submit"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
